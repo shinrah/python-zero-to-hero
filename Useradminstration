@@ -1,0 +1,14 @@
+#create a user and group
+
+user.py
+import subprocess
+#create a group
+print("\n===createAgroup")
+subprocess.run (["sudo","groupadd","devops"])
+#creaet a user
+print("\n==creaetauser==")
+subprocess.run (["sudo","useradd","-m","rahul"])
+#add user in group
+print("\n==adduseringroupu==")
+subprocess.run(["sudo","usermode","-aG","devops","rahul"])
+print("\n==taskcompletedsucesssfully==")
