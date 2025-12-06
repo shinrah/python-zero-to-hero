@@ -12,3 +12,20 @@ subprocess.run (["sudo","useradd","-m","rahul"])
 print("\n==adduseringroupu==")
 subprocess.run(["sudo","usermode","-aG","devops","rahul"])
 print("\n==taskcompletedsucesssfully==")
+
+with input function
+userupdated.py
+import subprocess
+#creat a group
+group = input("enter group name: ")
+# ask for the username
+user = input("type the username: ")
+
+print(f"\n==creating group '{group}'== ")
+subprocess.run (["sudo","groupadd",group])
+print(f"\n==creating user '{user}'====")
+subprocess.run (["sudo","useradd","-m",user])
+print(f"\n==adding user '{user}',to group '{group}")
+subprocess.run (["sudo","usermod", "-aG", group,user])
+print("\n==done==")
+
