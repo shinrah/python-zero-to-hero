@@ -1,0 +1,20 @@
+output of basic commands
+
+create a file
+output.py
+import subprocess
+print("\n==sysetmuptime===")
+subprocess.run (["uptime"])
+print("\n==diskoutput==")
+subprocess.run (["df" , "-h"])
+print("\n==listfiles==")
+subprocess.run (["ls"])
+print("\n===current working directory==")
+subprocess.run (["pwd"])
+print("\n==current user==")
+subprocess.run (["w"])
+print("\n==current groups member==")
+subprocess.run (["groups"])
+wq!
+
+python3 output.py
